@@ -11,6 +11,8 @@ python = "^3.12"
 Flask = "^3.0.0"
 bunnet = "^1.2.0"
 pymongo = "^4.6.1"
+lorem = "^0.1.1"
+environs = "^10.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.11"
