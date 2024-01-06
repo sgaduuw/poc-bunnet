@@ -1,6 +1,9 @@
 from datetime import datetime
+
 from bunnet import Document, Link
+
 from app.models import Author
+
 
 class Post(Document):
     title: str

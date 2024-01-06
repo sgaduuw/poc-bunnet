@@ -1,8 +1,8 @@
 from flask import jsonify
-from app.routes.public import public
+from lorem import sentence, paragraph
 
 from app.models import Author, Post
-from lorem import sentence, paragraph
+from app.routes.public import public
 
 
 def create_author(nick: str):

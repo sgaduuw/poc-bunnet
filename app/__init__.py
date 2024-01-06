@@ -1,11 +1,13 @@
-from flask import Flask
-from app.routes.public import public
 from bunnet import init_bunnet
-from pymongo import MongoClient
 from environs import Env
+from flask import Flask
+from pymongo import MongoClient
+
+from app.routes.public import public
 
 env = Env()
 c_mongo = MongoClient(env.str("MONGODB_URL"))
+
 
 class Config:
     FLASK_DEBUG = True
@@ -26,14 +28,17 @@ def create_app() -> Flask:
     )
     return app
 
+
 def register_extensions(app) -> None:
     """Register Flask extensions."""
     return None
+
 
 def register_blueprints(app) -> None:
     """Register Flask blueprints."""
     app.register_blueprint(public)
     return None
+
 
 if __name__ == 'main':
     app = create_app()
