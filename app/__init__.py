@@ -16,7 +16,6 @@ class Config:
 def create_app() -> Flask:
     app = Flask(__name__)
     app.config.from_object(Config)
-    register_extensions(app)
     register_blueprints(app)
 
     init_bunnet(
@@ -27,11 +26,6 @@ def create_app() -> Flask:
         ]
     )
     return app
-
-
-def register_extensions(app) -> None:
-    """Register Flask extensions."""
-    return None
 
 
 def register_blueprints(app) -> None:

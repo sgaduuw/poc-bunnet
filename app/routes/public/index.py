@@ -16,7 +16,7 @@ def create_author(nick: str):
     return author
 
 
-def create_ipsum_post(nick:str) -> None:
+def create_ipsum_post(nick: str) -> None:
     Post(
         title=sentence(),
         body=paragraph(),
@@ -30,7 +30,13 @@ def index():
     create_ipsum_post(author.nick)
     q_posts = Post.find(fetch_links=True).to_list()
 
-    posts = [{'author': q.author.nick,'title': q.title, 'body': q.body, 'publish_date': q.publish_date} for q in q_posts]
+    posts = [{
+        'author': q.author.nick,
+        'title': q.title,
+        'body': q.body,
+        'publish_date': q.publish_date
+    } for q in q_posts]
+
     context = {
         'posts': posts
     }

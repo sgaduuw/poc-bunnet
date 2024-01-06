@@ -1,2 +1,2 @@
-from app.models.author import Author
-from app.models.post import Post
+from app.models.author import Author # noqa
+from app.models.post import Post # noqa
