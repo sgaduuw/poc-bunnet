@@ -1,0 +1,1 @@
+This is a simple project to check out the usability of bunnet when combined with Flask

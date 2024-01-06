@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "poc-bunnet"
+version = "0.1.0"
+description = "An attempt at interfacing with mongo through bunnet inside flask"
+authors = ["Eelco Wesemann"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.0"
+bunnet = "^1.2.0"
+pymongo = "^4.6.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

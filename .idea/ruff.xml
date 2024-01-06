@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RuffConfigService">
+    <option name="projectRuffExecutablePath" value="$USER_HOME$/Library/Caches/pypoetry/virtualenvs/poc-bunnet-Kj0SgiOP-py3.12/bin/ruff" />
+    <option name="runRuffOnSave" value="true" />
+  </component>
+</project>
